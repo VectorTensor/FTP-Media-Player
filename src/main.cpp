@@ -1,5 +1,6 @@
+#include "FtpTextSource.h"
 
-#include <iostream>
-using namespace std;
-
-int main() { cout << "Hello world" << endl; }
+int main() {
+    test_ftp_text_source();
+    return 0;
+}
