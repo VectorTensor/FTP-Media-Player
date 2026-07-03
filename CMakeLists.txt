@@ -3,10 +3,12 @@ project(Pegasus)
 
 set(CMAKE_CXX_STANDARD 20)
 
-find_package(SDL3 CONFIG REQUIRED)
-find_package(SDL3_ttf REQUIRED)
 find_package(CURL REQUIRED)
 file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
+
+add_library(expected INTERFACE)
+target_include_directories(expected INTERFACE ${CMAKE_SOURCE_DIR}/thirdparty/expected/include)
+
 add_library(
         audiobook_core
         src/lib/FTPTextSource.cpp
@@ -16,7 +18,7 @@ target_include_directories(
         audiobook_core PUBLIC ${CMAKE_SOURCE_DIR}/include
 )
 
-target_link_libraries(audiobook_core PUBLIC SDL3::SDL3 SDL3_ttf::SDL3_ttf  CURL::libcurl)
+target_link_libraries(audiobook_core PUBLIC  CURL::libcurl expected)
 
 add_executable(Pegasus src/main.cpp
 
