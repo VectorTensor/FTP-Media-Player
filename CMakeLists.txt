@@ -12,6 +12,8 @@ target_include_directories(expected INTERFACE ${CMAKE_SOURCE_DIR}/thirdparty/exp
 add_library(
         audiobook_core
         src/lib/FTPTextSource.cpp
+        src/lib/config/config.cpp
+        src/lib/config/config.h
 )
 
 target_include_directories(
