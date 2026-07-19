@@ -88,7 +88,8 @@ target_link_libraries(audiobook_core PUBLIC
 
 
 add_executable(Pegasus src/main.cpp
-
+        src/services/anime_service.cpp
+        src/services/anime_service.h
 )
 target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects grpc++ grpc++_reflection)
 

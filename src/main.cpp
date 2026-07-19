@@ -1,8 +1,8 @@
 #include "FTPTextSource.h"
 #include <iostream>
 
-#include "Anime.grpc.pb.h"
 #include "lib/config/config.h"
+#include "services/anime_service.h"
 #include <grpcpp/ext/proto_server_reflection_plugin.h>
 #include <grpcpp/grpcpp.h>
 
@@ -34,16 +34,6 @@ int ftp_main() {
     std::cout << resource.name << std::endl;
   }
 }
-
-class AnimeServiceImpl final : public anime::AnimeService::Service {
-  grpc::Status Ping(grpc::ServerContext *context,
-                    const anime::PingRequest *request,
-                    anime::PongReply *reply) override {
-    std::cout << "Received: " << request->message() << std::endl;
-    reply->set_message("Pong: " + request->message());
-    return grpc::Status::OK;
-  }
-};
 
 void RunServer() {
   std::string server_address("0.0.0.0:50051");
