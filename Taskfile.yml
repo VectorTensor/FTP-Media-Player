@@ -4,14 +4,14 @@ version: '3'
 
 vars:
   GREETING: Hello, world!
-  PROGRAM: Lagrangian # name of the project
+  PROGRAM: Pegasus 
 dotenv: ['.env']
 tasks:
   generate:
     desc: building cmake_commands_json
     cmds:
       - echo creating the building cmake_commands_json build files.............
-      - cmake -G "Ninja" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_TOOLCHAIN_FILE={{.VCPKG_ROOT}}/scripts/buildsystems/vcpkg.cmake -B build
+      - cmake -G "Ninja" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON  -B build
     silent: true
   build:
     desc: build the binary
