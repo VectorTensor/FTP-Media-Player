@@ -6,7 +6,7 @@
 #include <grpcpp/ext/proto_server_reflection_plugin.h>
 #include <grpcpp/grpcpp.h>
 
-int ftp_main() {
+void ftp_main() {
   std::string host = config::get_env_or("FTP_HOST");
   std::string username = config::get_env_or("FTP_USER");
   std::string password = config::get_env_or("FTP_PASS");

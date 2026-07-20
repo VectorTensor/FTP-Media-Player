@@ -4,6 +4,7 @@ package anime;
 
 service AnimeService{
   rpc Ping (PingRequest) returns (PongReply) {}
+  rpc ListAnime (ListAnimeRequest) returns (ListAnimeResponse) {}
 }
 
 message PingRequest {
@@ -12,4 +13,22 @@ message PingRequest {
 
 message PongReply {
   string message = 1;
+}
+
+message ListAnimeRequest{
+
+}
+
+message AnimeData{
+
+  string name = 1;
+  string url = 2;
+  
+
+}
+
+message ListAnimeResponse{
+  repeated AnimeData animes = 1;
+
+
 }
