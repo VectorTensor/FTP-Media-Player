@@ -14,8 +14,8 @@ option(USE_SYSTEM_GRPC "Use system-installed gRPC instead of fetching it" OFF)
 
 if(USE_SYSTEM_GRPC)
     list(APPEND CMAKE_PREFIX_PATH "/opt/grpc")
-    find_package(gRPC CONFIG REQUIRED)
     find_package(Protobuf CONFIG REQUIRED)
+    find_package(gRPC CONFIG REQUIRED)
 else()
     FetchContent_Declare(
 
@@ -27,9 +27,9 @@ else()
     )
     set(FETCHCONTENT_QUIET OFF)
     FetchContent_MakeAvailable(grpc)
+    include(${protobuf_SOURCE_DIR}/cmake/protobuf-generate.cmake)
 endif()
 
-include(${protobuf_SOURCE_DIR}/cmake/protobuf-generate.cmake)
 
 find_package(CURL REQUIRED)
 file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
@@ -57,7 +57,21 @@ foreach(PROTO_FILE ${PROTO_FILES})
 endforeach()
 
 # --- Single protoc invocation for all protos at once ---
-add_custom_command(
+
+if(USE_SYSTEM_GRPC)
+    add_custom_command(
+            OUTPUT ${ALL_PROTO_SRCS} ${ALL_PROTO_HDRS}
+            COMMAND $<TARGET_FILE:protobuf::protoc>
+            ARGS --grpc_out=${GENERATED_DIR}
+            --cpp_out=${GENERATED_DIR}
+            --plugin=protoc-gen-grpc=$<TARGET_FILE:gRPC::grpc_cpp_plugin>
+            -I ${CMAKE_CURRENT_SOURCE_DIR}/protos
+            ${PROTO_FILES}
+            DEPENDS ${PROTO_FILES}
+            COMMENT "Running protoc on all proto files"
+    )
+else()
+    add_custom_command(
     OUTPUT ${ALL_PROTO_SRCS} ${ALL_PROTO_HDRS}
     COMMAND $<TARGET_FILE:protoc>
     ARGS --grpc_out=${GENERATED_DIR}
@@ -67,12 +81,17 @@ add_custom_command(
          ${PROTO_FILES}
     DEPENDS ${PROTO_FILES}
     COMMENT "Running protoc on all proto files"
-)
+    )
+endif()
 
 add_library(expected INTERFACE)
 target_include_directories(expected INTERFACE ${CMAKE_SOURCE_DIR}/thirdparty/expected/include)
 add_library(proto-objects OBJECT ${ALL_PROTO_SRCS} ${ALL_PROTO_HDRS})
-target_link_libraries(proto-objects PUBLIC libprotobuf grpc++)
+if(USE_SYSTEM_GRPC)
+        target_link_libraries(proto-objects PUBLIC protobuf::libprotobuf gRPC::grpc++)
+else()
+    target_link_libraries(proto-objects PUBLIC libprotobuf grpc++)
+endif()
 target_include_directories(proto-objects PUBLIC ${GENERATED_DIR})
 
 add_library(
@@ -98,9 +117,13 @@ target_link_libraries(audiobook_core PUBLIC
 add_executable(Pegasus src/main.cpp
         src/services/anime_service.cpp
         src/services/anime_service.h
-        src/lib/ftp_helper/ftp_Helper.cpp
+        src/lib/ftp_helper/ftp_helper.cpp
 )
-target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects grpc++ grpc++_reflection)
+if(USE_SYSTEM_GRPC)
+    target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects gRPC::grpc++ gRPC::grpc++_reflection)
+else()
+    target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects grpc++ grpc++_reflection)
+endif()
 
 
 

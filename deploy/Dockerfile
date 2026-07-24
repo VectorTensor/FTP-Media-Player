@@ -1,4 +1,5 @@
-FROM 387555629933.dkr.ecr.us-east-1.amazonaws.com/grpc-cpp-builder:v1.82.0
+FROM 387555629933.dkr.ecr.us-east-1.amazonaws.com/grpc-cpp-builder:latest
+
 
 COPY . /app
 WORKDIR /app
