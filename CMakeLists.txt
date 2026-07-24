@@ -13,6 +13,7 @@ set(gRPC_BUILD_GRPCPP_REFLECTION ON CACHE BOOL "" FORCE)
 option(USE_SYSTEM_GRPC "Use system-installed gRPC instead of fetching it" OFF)
 
 if(USE_SYSTEM_GRPC)
+    list(APPEND CMAKE_PREFIX_PATH "/opt/grpc")
     find_package(gRPC CONFIG REQUIRED)
     find_package(Protobuf CONFIG REQUIRED)
 else()
