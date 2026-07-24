@@ -43,13 +43,14 @@ RUN --mount=type=cache,target=/ccache \
     -DCMAKE_INSTALL_PREFIX=/opt/grpc \
     -DCMAKE_CXX_STANDARD=20 \
     -DABSL_ENABLE_INSTALL=ON \
+    -Dprotobuf_INSTALL=ON \
+    -Dutf8_range_ENABLE_INSTALL=ON \
     -DgRPC_ZLIB_PROVIDER=package \
     -DgRPC_SSL_PROVIDER=package \
     -DgRPC_CARES_PROVIDER=module \
     && cmake --build build -j$(nproc) --target install \
     && find /opt/grpc -name '*.a' -exec strip --strip-debug {} \; \
     && rm -rf /grpc
-
 # ---------- Stage 2: runtime-ready base your app images will FROM ----------
 FROM debian:bookworm-slim
 
