@@ -63,7 +63,7 @@ jobs:
         run: |
           docker buildx build \
             --build-arg GRPC_VERSION=${{ steps.tags.outputs.version_tag }} \
-            -f Dockerfile.builder \
+            -f deploy/base/Dockerfile\
             -t $REGISTRY/${{ env.ECR_REPOSITORY }}:${{ steps.tags.outputs.version_tag }} \
             -t $REGISTRY/${{ env.ECR_REPOSITORY }}:${{ steps.tags.outputs.extra_tag }} \
             -t $REGISTRY/${{ env.ECR_REPOSITORY }}:latest \
