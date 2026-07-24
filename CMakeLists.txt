@@ -10,17 +10,23 @@ set(utf8_range_ENABLE_INSTALL OFF CACHE BOOL "" FORCE)
 set(ABSL_ENABLE_INSTALL OFF CACHE BOOL "" FORCE)
 set(gRPC_INSTALL OFF CACHE BOOL "" FORCE)
 set(gRPC_BUILD_GRPCPP_REFLECTION ON CACHE BOOL "" FORCE)
+option(USE_SYSTEM_GRPC "Use system-installed gRPC instead of fetching it" OFF)
 
-FetchContent_Declare(
+if(USE_SYSTEM_GRPC)
+    find_package(gRPC CONFIG REQUIRED)
+    find_package(Protobuf CONFIG REQUIRED)
+else()
+    FetchContent_Declare(
 
-  grpc 
-  GIT_REPOSITORY https://github.com/grpc/grpc
-  GIT_TAG v1.82.0
-  GIT_SHALLOW TRUE
+      grpc
+      GIT_REPOSITORY https://github.com/grpc/grpc
+      GIT_TAG v1.82.0
+      GIT_SHALLOW TRUE
 
-)
-set(FETCHCONTENT_QUIET OFF)
-FetchContent_MakeAvailable(grpc)
+    )
+    set(FETCHCONTENT_QUIET OFF)
+    FetchContent_MakeAvailable(grpc)
+endif()
 
 include(${protobuf_SOURCE_DIR}/cmake/protobuf-generate.cmake)
 
