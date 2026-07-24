@@ -21,6 +21,7 @@ permissions:
 
 jobs:
   build-and-push:
+    environment: production
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -63,7 +64,7 @@ jobs:
         run: |
           docker buildx build \
             --build-arg GRPC_VERSION=${{ steps.tags.outputs.version_tag }} \
-            -f deploy/base/Dockerfile\
+            -f deploy/base/Dockerfile \
             -t $REGISTRY/${{ env.ECR_REPOSITORY }}:${{ steps.tags.outputs.version_tag }} \
             -t $REGISTRY/${{ env.ECR_REPOSITORY }}:${{ steps.tags.outputs.extra_tag }} \
             -t $REGISTRY/${{ env.ECR_REPOSITORY }}:latest \
