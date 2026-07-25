@@ -96,7 +96,7 @@ target_include_directories(proto-objects PUBLIC ${GENERATED_DIR})
 
 add_library(
         audiobook_core
-        src/lib/FTPTextSource.cpp
+        src/lib/ftp_text_source.cpp
         src/lib/config/config.cpp
         src/lib/config/config.h
 )

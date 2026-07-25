@@ -1,4 +1,4 @@
-#include "FTPTextSource.h"
+#include "ftp_text_source.h"
 #include <curl/curl.h>
 #include <iostream>
 #include <sstream>

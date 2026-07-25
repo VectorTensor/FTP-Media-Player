@@ -1,4 +1,4 @@
-#include "FTPTextSource.h"
+#include "ftp_text_source.h"
 #include <iostream>
 
 #include "lib/config/config.h"
