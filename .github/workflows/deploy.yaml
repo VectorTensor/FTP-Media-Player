@@ -31,9 +31,13 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
+      - name: Read version
+        run: |
+          echo "IMAGE_TAG=$(cat .version)" >> $GITHUB_ENV
+
       - name: Build app image
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          docker build -t $REGISTRY/$ECR_REPOSITORY:${{ github.sha }} -f deploy/Dockerfile .
-          docker push $REGISTRY/$ECR_REPOSITORY:${{ github.sha }}
+          docker build -t $REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f deploy/Dockerfile .
+          docker push $REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
