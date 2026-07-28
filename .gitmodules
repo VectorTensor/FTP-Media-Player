@@ -1,3 +1,6 @@
 [submodule "thirdparty/expected"]
 	path = thirdparty/expected
 	url = https://github.com/TartanLlama/expected.git
+[submodule "thirdparty/libtorrent"]
+	path = thirdparty/libtorrent
+	url = https://github.com/arvidn/libtorrent.git

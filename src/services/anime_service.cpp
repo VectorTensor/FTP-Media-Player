@@ -30,7 +30,6 @@ grpc::Status AnimeServiceImpl::ListAnime(grpc::ServerContext *context,
               << std::endl;
   }
 
-  std::vector<std::string> *animes = new std::vector<std::string>();
 
   for (const auto &resource : *resources) {
     anime::AnimeData *data = reply->add_animes();

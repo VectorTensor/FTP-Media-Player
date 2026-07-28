@@ -10,7 +10,12 @@ set(utf8_range_ENABLE_INSTALL OFF CACHE BOOL "" FORCE)
 set(ABSL_ENABLE_INSTALL OFF CACHE BOOL "" FORCE)
 set(gRPC_INSTALL OFF CACHE BOOL "" FORCE)
 set(gRPC_BUILD_GRPCPP_REFLECTION ON CACHE BOOL "" FORCE)
+set(build_examples OFF CACHE BOOL "" FORCE)
+set(build_tests OFF CACHE BOOL "" FORCE)
+set(deprecated-functions OFF CACHE BOOL "" FORCE)
+
 option(USE_SYSTEM_GRPC "Use system-installed gRPC instead of fetching it" OFF)
+option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
 if(USE_SYSTEM_GRPC)
     list(APPEND CMAKE_PREFIX_PATH "/opt/grpc")
@@ -112,6 +117,7 @@ target_link_libraries(audiobook_core PUBLIC
   expected
   CURL::libcurl
 )
+add_subdirectory(thirdparty/libtorrent)
 
 
 add_executable(Pegasus src/main.cpp
@@ -120,9 +126,9 @@ add_executable(Pegasus src/main.cpp
         src/lib/ftp_helper/ftp_helper.cpp
 )
 if(USE_SYSTEM_GRPC)
-    target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects gRPC::grpc++ gRPC::grpc++_reflection)
+    target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects gRPC::grpc++ gRPC::grpc++_reflection torrent-rasterbar)
 else()
-    target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects grpc++ grpc++_reflection)
+    target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects grpc++ grpc++_reflection torrent-rasterbar)
 endif()
 
 
