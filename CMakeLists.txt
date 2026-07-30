@@ -16,7 +16,11 @@ set(deprecated-functions OFF CACHE BOOL "" FORCE)
 
 option(USE_SYSTEM_GRPC "Use system-installed gRPC instead of fetching it" OFF)
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
-
+find_package(OpenSSL REQUIRED)
+message(STATUS "Pegasus using OpenSSL ${OPENSSL_VERSION}")
+message(STATUS "  Include: ${OPENSSL_INCLUDE_DIR}")
+message(STATUS "  SSL lib: ${OPENSSL_SSL_LIBRARY}")
+message(STATUS "  Crypto lib: ${OPENSSL_CRYPTO_LIBRARY}")
 if(USE_SYSTEM_GRPC)
     list(APPEND CMAKE_PREFIX_PATH "/opt/grpc")
     find_package(Protobuf CONFIG REQUIRED)
@@ -43,6 +47,7 @@ file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
 set(PROTO_FILES 
 
   ${CMAKE_CURRENT_SOURCE_DIR}/protos/Anime.proto
+        ${CMAKE_CURRENT_SOURCE_DIR}/protos/Download.proto
 )
 
 set(GENERATED_DIR ${CMAKE_CURRENT_BINARY_DIR}/generated)
@@ -124,6 +129,10 @@ add_executable(Pegasus src/main.cpp
         src/services/anime_service.cpp
         src/services/anime_service.h
         src/lib/ftp_helper/ftp_helper.cpp
+        src/services/download_service.cpp
+        src/services/download_service.h
+        src/lib/torrent_helper/torrent_helper.cpp
+        src/lib/torrent_helper/torrent_helper.h
 )
 if(USE_SYSTEM_GRPC)
     target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects gRPC::grpc++ gRPC::grpc++_reflection torrent-rasterbar)

@@ -6,6 +6,9 @@
 #include <grpcpp/ext/proto_server_reflection_plugin.h>
 #include <grpcpp/grpcpp.h>
 
+#include "libtorrent/session.hpp"
+#include "services/download_service.h"
+
 void ftp_main() {
   std::string host = config::get_env_or("FTP_HOST");
   std::string username = config::get_env_or("FTP_USER");
@@ -36,12 +39,17 @@ void ftp_main() {
 }
 
 void RunServer() {
+  lt::session session;
+
+  std::cout << "Session created successfully!" << std::endl;
   std::string server_address("0.0.0.0:50051");
   AnimeServiceImpl service;
+  DownloadServiceImpl service2(session);
   grpc::reflection::InitProtoReflectionServerBuilderPlugin();
   grpc::ServerBuilder builder;
   builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
   builder.RegisterService(&service);
+  builder.RegisterService(&service2);
 
   std::unique_ptr<grpc::Server> server(builder.BuildAndStart());
   std::cout << "Server listening on " << server_address << std::endl;

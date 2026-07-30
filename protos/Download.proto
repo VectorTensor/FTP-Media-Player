@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package download;
+
+service DownloadService{
+  rpc DownloadAnime (DownloadAnimeRequest) returns (DownloadAnimeResponse);
+}
+
+message DownloadAnimeRequest{
+  string url = 1;
+
+}
+message DownloadAnimeResponse{
+  string message = 1;
+  bool status = 2;
+
+}
