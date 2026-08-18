@@ -1,0 +1,477 @@
+{
+  "date": "2026-08-06T16:00:44.081627+05:45",
+  "data": {
+    "/Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/test/CMakeLists.txt": [
+      {
+        "label": "CMAKE_CXX_FLAGS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/test/CMakeLists.txt"
+      }
+    ],
+    "/Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt": [
+      {
+        "label": "_get_compatible_python_versions",
+        "kind": 3,
+        "detail": "Function",
+        "documentation": "defined function\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt\n\nSee https://devguide.python.org/#status-of-python-branches for supported python versions"
+      },
+      {
+        "label": "${_ret}",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt"
+      },
+      {
+        "label": "Python3::Interpreter",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package from: Python3"
+      },
+      {
+        "label": "Python3::Development",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package from: Python3"
+      },
+      {
+        "label": "Python3_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Python3"
+      },
+      {
+        "label": "Python3_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Python3"
+      },
+      {
+        "label": "boost-python-module-name",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt"
+      },
+      {
+        "label": "Boost::${boost-python-module-name}",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package from: Boost"
+      },
+      {
+        "label": "Boost_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Boost"
+      },
+      {
+        "label": "Boost_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Boost"
+      },
+      {
+        "label": "_PYTHON3_SITE_ARCH",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt"
+      },
+      {
+        "label": "SETUP_PY_IN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt"
+      },
+      {
+        "label": "SETUP_PY",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt"
+      },
+      {
+        "label": "OUTPUT",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt"
+      },
+      {
+        "label": "DEPS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt"
+      }
+    ],
+    "/Users/progressive/learn/FTP-Media-Player/CMakeLists.txt": [
+      {
+        "label": "CMAKE_CXX_STANDARD",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "CMAKE_CXX_STANDARD_REQUIRED",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "protobuf_INSTALL",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "utf8_range_ENABLE_INSTALL",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "ABSL_ENABLE_INSTALL",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_INSTALL",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPCPP_REFLECTION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "build_examples",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "build_tests",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "deprecated-functions",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_TESTS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt\n\nsize decrease"
+      },
+      {
+        "label": "gRPC_BUILD_CSHARP_EXT",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPC_CSHARP_PLUGIN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPC_JAVA_PLUGIN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPC_NODE_PLUGIN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPC_PHP_PLUGIN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPC_PYTHON_PLUGIN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_BUILD_GRPC_RUBY_PLUGIN",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "gRPC_INSTALL",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "USE_SYSTEM_GRPC",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "BUILD_SHARED_LIBS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "OpenSSL_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: OpenSSL"
+      },
+      {
+        "label": "OpenSSL_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: OpenSSL"
+      },
+      {
+        "label": "Protobuf_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Protobuf"
+      },
+      {
+        "label": "Protobuf_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: Protobuf"
+      },
+      {
+        "label": "gRPC_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: gRPC"
+      },
+      {
+        "label": "gRPC_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: gRPC"
+      },
+      {
+        "label": "FETCHCONTENT_QUIET",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "CURL_LIBRARIES",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: CURL"
+      },
+      {
+        "label": "CURL_INCLUDE_DIRS",
+        "kind": 6,
+        "detail": "Variable",
+        "documentation": "package: CURL"
+      },
+      {
+        "label": "PROTO_FILES",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "GENERATED_DIR",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      },
+      {
+        "label": "ALL_PROTO_SRCS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt\n\n--- Precompute expected output filenames for each proto ---"
+      },
+      {
+        "label": "ALL_PROTO_HDRS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt"
+      }
+    ],
+    "/Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt": [
+      {
+        "label": "SOVERSION",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "libtorrent_include_files",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "libtorrent_kademlia_include_files",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "libtorrent_extensions_include_files",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "libtorrent_aux_include_files",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "try_signal_include_files",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "sources",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "kademlia_sources",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt\n\n-- kademlia --"
+      },
+      {
+        "label": "ed25519_sources",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt\n\n-- ed25519 --"
+      },
+      {
+        "label": "try_signal_sources",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "THREADS_PREFER_PTHREAD_FLAG",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "CMAKE_MSVC_RUNTIME_LIBRARY",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "Boost_USE_MULTITHREADED",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "Boost_USE_STATIC_RUNTIME",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "OPENSSL_MSVC_STATIC_RT",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "ATOMICS_TEST_SOURCE",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "CMAKE_REQUIRED_FLAGS",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "CMAKE_REQUIRED_LIBRARIES",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "developer-options",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt\n\ndeveloper options"
+      },
+      {
+        "label": "asserts",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "invariant-checks",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "debug-iterators",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "ConfigPackageLocation",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "PDB_INSTALL_DIR",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      },
+      {
+        "label": "PDB_INSTALL_DIR",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt"
+      }
+    ],
+    "/Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/examples/CMakeLists.txt": [
+      {
+        "label": "single_file_examples",
+        "kind": 12,
+        "detail": "Value",
+        "documentation": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/examples/CMakeLists.txt"
+      }
+    ]
+  }
+}
