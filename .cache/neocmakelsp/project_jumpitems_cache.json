@@ -1,0 +1,1025 @@
+{
+  "date": "2026-08-06T16:00:44.082621+05:45",
+  "data": {
+    "sources": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 292,
+            "character": 4
+          },
+          "end": {
+            "line": 292,
+            "character": 11
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "BUILD_SHARED_LIBS": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 29,
+            "character": 7
+          },
+          "end": {
+            "line": 29,
+            "character": 24
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "deprecated-functions": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 14,
+            "character": 4
+          },
+          "end": {
+            "line": 14,
+            "character": 24
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPC_JAVA_PLUGIN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 20,
+            "character": 4
+          },
+          "end": {
+            "line": 20,
+            "character": 31
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "_get_compatible_python_versions": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 19,
+            "character": 9
+          },
+          "end": {
+            "line": 19,
+            "character": 40
+          }
+        }
+      },
+      "document_info": "defined function\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt\n\nSee https://devguide.python.org/#status-of-python-branches for supported python versions",
+      "is_function": true
+    },
+    "OUTPUT": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 113,
+            "character": 5
+          },
+          "end": {
+            "line": 113,
+            "character": 11
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+      "is_function": false
+    },
+    "boost-python-module-name": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 39,
+            "character": 4
+          },
+          "end": {
+            "line": 39,
+            "character": 28
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+      "is_function": false
+    },
+    "debug-iterators": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 862,
+            "character": 8
+          },
+          "end": {
+            "line": 862,
+            "character": 23
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_CXX_FLAGS": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/test/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 6,
+            "character": 6
+          },
+          "end": {
+            "line": 6,
+            "character": 21
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/test/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 22,
+            "character": 4
+          },
+          "end": {
+            "line": 22,
+            "character": 38
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "protobuf_INSTALL": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 7,
+            "character": 4
+          },
+          "end": {
+            "line": 7,
+            "character": 20
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "OPENSSL_MSVC_STATIC_RT": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 543,
+            "character": 5
+          },
+          "end": {
+            "line": 543,
+            "character": 27
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_REQUIRED_FLAGS": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 675,
+            "character": 6
+          },
+          "end": {
+            "line": 675,
+            "character": 26
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "Boost_USE_MULTITHREADED": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 541,
+            "character": 5
+          },
+          "end": {
+            "line": 541,
+            "character": 28
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "developer-options": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 832,
+            "character": 7
+          },
+          "end": {
+            "line": 832,
+            "character": 24
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt\n\ndeveloper options",
+      "is_function": false
+    },
+    "build_examples": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 12,
+            "character": 4
+          },
+          "end": {
+            "line": 12,
+            "character": 18
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "utf8_range_ENABLE_INSTALL": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 8,
+            "character": 4
+          },
+          "end": {
+            "line": 8,
+            "character": 29
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPC_PHP_PLUGIN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 23,
+            "character": 4
+          },
+          "end": {
+            "line": 23,
+            "character": 30
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_TESTS": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 17,
+            "character": 4
+          },
+          "end": {
+            "line": 17,
+            "character": 20
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt\n\nsize decrease",
+      "is_function": false
+    },
+    "ConfigPackageLocation": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 906,
+            "character": 4
+          },
+          "end": {
+            "line": 906,
+            "character": 25
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "DEPS": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 114,
+            "character": 5
+          },
+          "end": {
+            "line": 114,
+            "character": 9
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+      "is_function": false
+    },
+    "Boost_USE_STATIC_RUNTIME": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 542,
+            "character": 5
+          },
+          "end": {
+            "line": 542,
+            "character": 29
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_REQUIRED_LIBRARIES": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 681,
+            "character": 6
+          },
+          "end": {
+            "line": 681,
+            "character": 30
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_MSVC_RUNTIME_LIBRARY": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 536,
+            "character": 6
+          },
+          "end": {
+            "line": 536,
+            "character": 32
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "PROTO_FILES": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 58,
+            "character": 4
+          },
+          "end": {
+            "line": 58,
+            "character": 15
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPCPP_REFLECTION": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 11,
+            "character": 4
+          },
+          "end": {
+            "line": 11,
+            "character": 32
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "invariant-checks": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 849,
+            "character": 5
+          },
+          "end": {
+            "line": 849,
+            "character": 21
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "ABSL_ENABLE_INSTALL": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 9,
+            "character": 4
+          },
+          "end": {
+            "line": 9,
+            "character": 23
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "try_signal_include_files": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 284,
+            "character": 4
+          },
+          "end": {
+            "line": 284,
+            "character": 28
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPC_NODE_PLUGIN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 21,
+            "character": 4
+          },
+          "end": {
+            "line": 21,
+            "character": 31
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_CSHARP_EXT": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 18,
+            "character": 4
+          },
+          "end": {
+            "line": 18,
+            "character": 25
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "_PYTHON3_SITE_ARCH": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 93,
+            "character": 5
+          },
+          "end": {
+            "line": 93,
+            "character": 23
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_CXX_STANDARD_REQUIRED": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 3,
+            "character": 4
+          },
+          "end": {
+            "line": 3,
+            "character": 31
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "libtorrent_aux_include_files": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 192,
+            "character": 4
+          },
+          "end": {
+            "line": 192,
+            "character": 32
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "kademlia_sources": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 432,
+            "character": 4
+          },
+          "end": {
+            "line": 432,
+            "character": 20
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt\n\n-- kademlia --",
+      "is_function": false
+    },
+    "ed25519_sources": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 456,
+            "character": 4
+          },
+          "end": {
+            "line": 456,
+            "character": 19
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt\n\n-- ed25519 --",
+      "is_function": false
+    },
+    "libtorrent_kademlia_include_files": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 157,
+            "character": 4
+          },
+          "end": {
+            "line": 157,
+            "character": 37
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "PDB_INSTALL_DIR": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 961,
+            "character": 6
+          },
+          "end": {
+            "line": 961,
+            "character": 21
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "CMAKE_CXX_STANDARD": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 2,
+            "character": 4
+          },
+          "end": {
+            "line": 2,
+            "character": 22
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPC_RUBY_PLUGIN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 25,
+            "character": 4
+          },
+          "end": {
+            "line": 25,
+            "character": 31
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_INSTALL": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 26,
+            "character": 4
+          },
+          "end": {
+            "line": 26,
+            "character": 16
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "single_file_examples": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/examples/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 2,
+            "character": 4
+          },
+          "end": {
+            "line": 2,
+            "character": 24
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/examples/CMakeLists.txt",
+      "is_function": false
+    },
+    "try_signal_sources": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 469,
+            "character": 4
+          },
+          "end": {
+            "line": 469,
+            "character": 22
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "libtorrent_include_files": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 19,
+            "character": 4
+          },
+          "end": {
+            "line": 19,
+            "character": 28
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPC_CSHARP_PLUGIN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 19,
+            "character": 4
+          },
+          "end": {
+            "line": 19,
+            "character": 33
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "FETCHCONTENT_QUIET": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 48,
+            "character": 8
+          },
+          "end": {
+            "line": 48,
+            "character": 26
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "libtorrent_extensions_include_files": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 186,
+            "character": 4
+          },
+          "end": {
+            "line": 186,
+            "character": 39
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "asserts": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 834,
+            "character": 5
+          },
+          "end": {
+            "line": 834,
+            "character": 12
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "ATOMICS_TEST_SOURCE": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 662,
+            "character": 5
+          },
+          "end": {
+            "line": 662,
+            "character": 24
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "SETUP_PY": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 112,
+            "character": 5
+          },
+          "end": {
+            "line": 112,
+            "character": 13
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+      "is_function": false
+    },
+    "SETUP_PY_IN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 111,
+            "character": 5
+          },
+          "end": {
+            "line": 111,
+            "character": 16
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+      "is_function": false
+    },
+    "ALL_PROTO_HDRS": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 69,
+            "character": 4
+          },
+          "end": {
+            "line": 69,
+            "character": 18
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "THREADS_PREFER_PTHREAD_FLAG": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 487,
+            "character": 4
+          },
+          "end": {
+            "line": 487,
+            "character": 31
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "SOVERSION": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 14,
+            "character": 5
+          },
+          "end": {
+            "line": 14,
+            "character": 14
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/CMakeLists.txt",
+      "is_function": false
+    },
+    "gRPC_BUILD_GRPC_PYTHON_PLUGIN": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 24,
+            "character": 4
+          },
+          "end": {
+            "line": 24,
+            "character": 33
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "ALL_PROTO_SRCS": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 68,
+            "character": 4
+          },
+          "end": {
+            "line": 68,
+            "character": 18
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt\n\n--- Precompute expected output filenames for each proto ---",
+      "is_function": false
+    },
+    "${_ret}": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 23,
+            "character": 5
+          },
+          "end": {
+            "line": 23,
+            "character": 12
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/thirdparty/libtorrent/bindings/python/CMakeLists.txt",
+      "is_function": false
+    },
+    "USE_SYSTEM_GRPC": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 28,
+            "character": 7
+          },
+          "end": {
+            "line": 28,
+            "character": 22
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "GENERATED_DIR": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 64,
+            "character": 4
+          },
+          "end": {
+            "line": 64,
+            "character": 17
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    },
+    "build_tests": {
+      "location": {
+        "uri": "file:///Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+        "range": {
+          "start": {
+            "line": 13,
+            "character": 4
+          },
+          "end": {
+            "line": 13,
+            "character": 15
+          }
+        }
+      },
+      "document_info": "defined variable\nfrom: /Users/progressive/learn/FTP-Media-Player/CMakeLists.txt",
+      "is_function": false
+    }
+  }
+}

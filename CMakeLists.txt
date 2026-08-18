@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.1.1)
-project(Pegasus) 
+project(Pegasus)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -13,6 +13,18 @@ set(gRPC_BUILD_GRPCPP_REFLECTION ON CACHE BOOL "" FORCE)
 set(build_examples OFF CACHE BOOL "" FORCE)
 set(build_tests OFF CACHE BOOL "" FORCE)
 set(deprecated-functions OFF CACHE BOOL "" FORCE)
+set(gRPC_SSL_PROVIDER "package" CACHE STRING "" FORCE)
+
+#size decrease
+set(gRPC_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_CSHARP_EXT OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_GRPC_CSHARP_PLUGIN OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_GRPC_JAVA_PLUGIN OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_GRPC_NODE_PLUGIN OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_GRPC_OBJECTIVE_C_PLUGIN OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_GRPC_PHP_PLUGIN OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_GRPC_PYTHON_PLUGIN OFF CACHE BOOL "" FORCE)
+set(gRPC_BUILD_GRPC_RUBY_PLUGIN OFF CACHE BOOL "" FORCE)
 
 option(USE_SYSTEM_GRPC "Use system-installed gRPC instead of fetching it" OFF)
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
@@ -44,7 +56,7 @@ find_package(CURL REQUIRED)
 file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
 
 
-set(PROTO_FILES 
+set(PROTO_FILES
 
   ${CMAKE_CURRENT_SOURCE_DIR}/protos/Anime.proto
         ${CMAKE_CURRENT_SOURCE_DIR}/protos/Download.proto
@@ -112,13 +124,13 @@ add_library(
 )
 
 target_include_directories(
-        audiobook_core PUBLIC 
+        audiobook_core PUBLIC
         ${CMAKE_SOURCE_DIR}/include
         ${CMAKE_SOURCE_DIR}/src
 )
 
 
-target_link_libraries(audiobook_core PUBLIC 
+target_link_libraries(audiobook_core PUBLIC
   expected
   CURL::libcurl
 )
@@ -140,8 +152,19 @@ else()
     target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects grpc++ grpc++_reflection torrent-rasterbar)
 endif()
 
+#tests
+add_executable(test_pegasus src/test_libs.cpp
+        src/lib/torrent_helper/torrent_helper.cpp
+        src/lib/torrent_helper/torrent_helper.h
+)
 
+target_include_directories(
+        test_pegasus PUBLIC
+        ${CMAKE_SOURCE_DIR}/include
+        ${CMAKE_SOURCE_DIR}/src
+)
 
+target_link_libraries(test_pegasus PRIVATE torrent-rasterbar)
 # On Windows, copy SDL3.dll to the build directory
 if(WIN32)
     add_custom_command(
