@@ -26,9 +26,9 @@ create_ftp_client(const std::string &host, const std::string &username,
     return tl::unexpected("Failed to initialize curl handle");
   }
 
-  const auto config = FtpConfig(host, username, password);
+  const auto config = FtpConfig{host, username, password};
 
-  auto client = new FtpClient(curl, config);
+  auto client = new FtpClient{curl, config};
 
   return client;
 }

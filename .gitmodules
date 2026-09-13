@@ -4,6 +4,3 @@
 [submodule "thirdparty/libtorrent"]
 	path = thirdparty/libtorrent
 	url = https://github.com/arvidn/libtorrent.git
-[submodule "thirdparty/grpc"]
-	path = thirdparty/grpc
-	url = https://github.com/grpc/grpc.git

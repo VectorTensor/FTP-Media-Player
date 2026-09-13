@@ -1,3 +1,3 @@
 #include "libtorrent/session.hpp"
 
-void start_torrent_download(lt::session& session, const std::string& url);
+lt::torrent_handle start_torrent_download(lt::session& session, const std::string& url);

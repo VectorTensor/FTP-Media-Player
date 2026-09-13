@@ -3,11 +3,12 @@
 #include "Download.grpc.pb.h"
 #include <grpcpp/support/status.h>
 
-#include "libtorrent/session.hpp"
-
+#include "libtorrent/bt_peer_connection.hpp"
 class DownloadServiceImpl final : public download::DownloadService::Service {
     lt::session& session_;
-
+    static std::string InfoHashToString(const lt::info_hash_t& ih);
+    mutable std::mutex mutex_;
+    std::unordered_map<std::string, lt::torrent_handle> handles_;
 public:
     DownloadServiceImpl(lt::session &session);
 

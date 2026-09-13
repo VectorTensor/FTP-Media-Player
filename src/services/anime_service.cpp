@@ -34,8 +34,7 @@ grpc::Status AnimeServiceImpl::ListAnime(grpc::ServerContext *context,
   for (const auto &resource : *resources) {
     anime::AnimeData *data = reply->add_animes();
     data->set_name(resource.name);
-    data->set_url(std::format("{}//anime/{}", c.config.host, resource.name));
-  }
+    data->set_url(c.config.host + "//anime/" + resource.name);  }
 
   return grpc::Status::OK;
 }

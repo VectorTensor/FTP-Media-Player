@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 4.1.1)
 project(Pegasus)
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_compile_definitions(NOMINMAX WIN32_LEAN_AND_MEAN)
 
 include(FetchContent)
 
@@ -38,17 +39,10 @@ if(USE_SYSTEM_GRPC)
     find_package(Protobuf CONFIG REQUIRED)
     find_package(gRPC CONFIG REQUIRED)
 else()
-    FetchContent_Declare(
+    find_package(Protobuf CONFIG REQUIRED)
+    find_package(gRPC CONFIG REQUIRED)
 
-      grpc
-      GIT_REPOSITORY https://github.com/grpc/grpc
-      GIT_TAG v1.82.0
-      GIT_SHALLOW TRUE
-
-    )
-    set(FETCHCONTENT_QUIET OFF)
-    FetchContent_MakeAvailable(grpc)
-    include(${protobuf_SOURCE_DIR}/cmake/protobuf-generate.cmake)
+    include(${Protobuf_DIR}/protobuf-generate.cmake)
 endif()
 
 
@@ -165,11 +159,3 @@ target_include_directories(
 )
 
 target_link_libraries(test_pegasus PRIVATE torrent-rasterbar)
-# On Windows, copy SDL3.dll to the build directory
-if(WIN32)
-    add_custom_command(
-            TARGET Pegasus POST_BUILD
-            COMMAND "${CMAKE_COMMAND}" -E copy $<TARGET_FILE:SDL3::SDL3-shared> $<TARGET_FILE_DIR:Lagrangian>
-            VERBATIM
-    )
-endif()
