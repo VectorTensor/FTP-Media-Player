@@ -4,6 +4,7 @@ package download;
 
 service DownloadService{
   rpc DownloadAnime (DownloadAnimeRequest) returns (DownloadAnimeResponse);
+  rpc GetStatus (GetStatusRequest) returns (GetStatusResponse) {}
 }
 
 message DownloadAnimeRequest{
@@ -14,4 +15,17 @@ message DownloadAnimeResponse{
   string message = 1;
   bool status = 2;
   string id = 3;
+}
+
+message  GetStatusRequest{
+  string id = 1;
+
+}
+
+message GetStatusResponse {
+  float progress =1 ;
+  float total_downloaded = 2;
+  string state = 3;
+  float total_size = 4;
+
 }

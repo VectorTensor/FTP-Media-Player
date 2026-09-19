@@ -29,6 +29,4 @@ message AnimeData{
 
 message ListAnimeResponse{
   repeated AnimeData animes = 1;
-
-
 }

@@ -5,11 +5,11 @@
 
 class AnimeServiceImpl final : public anime::AnimeService::Service {
 
-  grpc::Status Ping(grpc::ServerContext *context,
+    grpc::Status Ping(grpc::ServerContext *context,
                     const anime::PingRequest *request,
                     anime::PongReply *reply) override;
 
-  grpc::Status ListAnime(grpc::ServerContext *context,
+    grpc::Status ListAnime(grpc::ServerContext *context,
                          const anime::ListAnimeRequest *request,
                          anime::ListAnimeResponse *reply) override;
 };
