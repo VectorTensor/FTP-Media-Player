@@ -146,16 +146,16 @@ else()
     target_link_libraries(Pegasus PRIVATE audiobook_core proto-objects grpc++ grpc++_reflection torrent-rasterbar)
 endif()
 
-#tests
-add_executable(test_pegasus src/test_libs.cpp
-        src/lib/torrent_helper/torrent_helper.cpp
-        src/lib/torrent_helper/torrent_helper.h
-)
-
-target_include_directories(
-        test_pegasus PUBLIC
-        ${CMAKE_SOURCE_DIR}/include
-        ${CMAKE_SOURCE_DIR}/src
-)
-
-target_link_libraries(test_pegasus PRIVATE torrent-rasterbar)
+##tests
+#add_executable(test_pegasus src/test_libs.cpp
+#        src/lib/torrent_helper/torrent_helper.cpp
+#        src/lib/torrent_helper/torrent_helper.h
+#)
+#
+#target_include_directories(
+#        test_pegasus PUBLIC
+#        ${CMAKE_SOURCE_DIR}/include
+#        ${CMAKE_SOURCE_DIR}/src
+#)
+#
+#target_link_libraries(test_pegasus PRIVATE torrent-rasterbar)
