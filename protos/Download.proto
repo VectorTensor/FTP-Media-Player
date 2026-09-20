@@ -33,6 +33,7 @@ message GetStatusResponse {
   string state = 3;
   float total_size = 4;
   bool isPaused = 5;
+  float download_speed = 6;
 
 }
 

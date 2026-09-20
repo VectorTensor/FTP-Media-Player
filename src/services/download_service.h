@@ -19,5 +19,7 @@ public:
     grpc::Status GetStatus(grpc::ServerContext* context, const download::GetStatusRequest* request, download::GetStatusResponse* response) override;
     grpc::Status PauseDownload(grpc::ServerContext* context, const download::PauseDownloadRequest* request, download::PauseDownloadResponse* response) override;
     grpc::Status ResumeDownload(grpc::ServerContext* context, const download::ResumeDownloadRequest* request, download::ResumeDownloadResponse* response) override;
+    grpc::Status SetDownloadLimit(grpc::ServerContext* context, const download::SetDownloadRequest* request, download::SetDownloadResponse* response) override;
+    grpc::Status UnsetDownloadLimit(grpc::ServerContext* context, const download::UnsetDownloadRequest* request, download::SetDownloadResponse* response) override;
 
 };

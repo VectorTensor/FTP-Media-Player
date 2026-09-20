@@ -60,6 +60,7 @@ grpc::Status DownloadServiceImpl::GetStatus(grpc::ServerContext* context, const 
     response->set_progress(t_status.progress*100);
     response->set_total_downloaded(t_status.total_done /static_cast<float>(1024 * 1024));
     response->set_total_size(t_status.total/static_cast<float>(1024 * 1024));
+    response->set_download_speed(t_status.download_rate/static_cast<float>(1024));
     if (t_status.flags & lt::torrent_flags::paused)
     {
         response->set_ispaused(true);
@@ -98,6 +99,37 @@ grpc::Status DownloadServiceImpl::ResumeDownload(grpc::ServerContext* context, c
     it->second.resume();
     response->set_status(true);
     response->set_message("successfully resumed");
+
+    return grpc::Status::OK;
+}
+
+grpc::Status DownloadServiceImpl::SetDownloadLimit(grpc::ServerContext* context, const download::SetDownloadRequest* request, download::SetDownloadResponse* response)
+{
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto id = request->id();
+    auto it = handles_.find(id);
+    if (it == handles_.end() || !it->second.is_valid())
+        return {grpc::StatusCode::NOT_FOUND, "Torrent not found"};
+    int limit = request->limit();
+    it->second.set_download_limit(limit * 1024);
+    response->set_status(true);
+    response->set_message("successfully added limit");
+
+    return grpc::Status::OK;
+
+}
+
+grpc::Status DownloadServiceImpl::UnsetDownloadLimit(grpc::ServerContext* context, const download::UnsetDownloadRequest* request, download::SetDownloadResponse* response)
+{
+
+    std::lock_guard<std::mutex> lock(mutex_);
+    auto id = request->id();
+    auto it = handles_.find(id);
+    if (it == handles_.end() || !it->second.is_valid())
+        return {grpc::StatusCode::NOT_FOUND, "Torrent not found"};
+    it->second.set_download_limit(-1);
+    response->set_status(true);
+    response->set_message("successfully removed limit");
 
     return grpc::Status::OK;
 }
