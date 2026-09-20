@@ -17,4 +17,7 @@ public:
                       download::DownloadAnimeResponse *reply) override;
 
     grpc::Status GetStatus(grpc::ServerContext* context, const download::GetStatusRequest* request, download::GetStatusResponse* response) override;
+    grpc::Status PauseDownload(grpc::ServerContext* context, const download::PauseDownloadRequest* request, download::PauseDownloadResponse* response) override;
+    grpc::Status ResumeDownload(grpc::ServerContext* context, const download::ResumeDownloadRequest* request, download::ResumeDownloadResponse* response) override;
+
 };
