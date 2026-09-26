@@ -58,9 +58,9 @@ grpc::Status DownloadServiceImpl::GetStatus(grpc::ServerContext* context, const 
     auto t_status= it->second.status();
     response->set_state(toStringState(t_status.state));
     response->set_progress(t_status.progress*100);
-    response->set_total_downloaded(t_status.total_done /static_cast<float>(1024 * 1024));
-    response->set_total_size(t_status.total/static_cast<float>(1024 * 1024));
-    response->set_download_speed(t_status.download_rate/static_cast<float>(1024));
+    response->set_total_downloaded(t_status.total_done );
+    response->set_total_size(t_status.total);
+    response->set_download_speed(t_status.download_rate);
     if (t_status.flags & lt::torrent_flags::paused)
     {
         response->set_ispaused(true);
