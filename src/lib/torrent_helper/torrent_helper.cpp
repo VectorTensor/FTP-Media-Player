@@ -6,9 +6,14 @@
 
 lt::torrent_handle start_torrent_download(lt::session& session, const std::string& url, const std::string& download_path) {
     lt::add_torrent_params atp = lt::parse_magnet_uri(url);
-    std::ostringstream oss;
     const std::string base_name = config::get_env_or("CFG_BASE_DOWNLOAD_PATH", "./");
-    oss <<base_name<<download_path;
+    const bool is_blank = std::all_of(download_path.begin(), download_path.end(),
+    [](unsigned char c) { return std::isspace(c); });
+    std::ostringstream oss;
+    oss << base_name;
+    if (!is_blank) {
+        oss << download_path;
+    }
     std::cout<<"downloadd to : "<<oss.str()<<std::endl;
     atp.save_path = oss.str();
     atp.flags = atp.flags
